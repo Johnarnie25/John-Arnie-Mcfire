@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  background-color: #171b22;
+}
+
+div.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column; /* Change to column on small screens */
+  align-items: center;
+
+  background-color: #ffb703;
+  padding: 30px;
+  box-shadow: 0 50px 50px -50px darkslategray;
+}
+
+div.container div.myform {
+  width: 100%; /* Full width on small screens */
+  margin-bottom: 20px; /* Add margin for separation on small screens */
+}
+
+div.container div.myform h2 {
+  color: #1c1c1e;
+  margin-bottom: 20px;
+}
+
+div.container div.myform input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: 100%;
+  border-bottom: 2px solid #1c1c1e;
+  margin-bottom: 25px;
+  padding: 7px 0;
+  font-size: 14px;
+}
+
+div.container div.myform button {
+  color: white;
+  background-color: #1c1c1e;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 5px 12px;
+  font-weight: 500;
+}
+
+div.container div.image img {
+  width: 100%; /* Full width on small screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for small screens */
+@media only screen and (min-width: 600px) {
+  div.container {
+    flex-direction: row;
+  }
+
+  div.container div.myform {
+    width: 270px;
+    margin-right: 30px;
+  }
+}
+
+  
